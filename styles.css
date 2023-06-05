@@ -1,110 +1,124 @@
 * {
-    font-family: roboto mono, Arial;
-    box-sizing: border-box;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-  
-  #logo {
-    color: rgb(181, 205, 163);
-    flex-direction: flex-start;
-    font-size: 26px;
-    font-weight: 800;
-  }
-  
-  #search {
-    /* background-color: rgb(201, 228, 197); */
-    border-radius: 28px;
-    border: 1px solid #18ab29;
-    cursor: auto;
-    color: grey;
-    font-size: 14px;
-    padding: 2px 100px;
-    text-decoration: none;
-  }
-  
-  
-  #login {
-    flex-direction: flex-end;
-  
-    background-color: rgb(201, 228, 197);
-    border-radius: 28px;
-    border: 1px solid #18ab29;
-    cursor: pointer;
-    color: grey;
-    font-size: 14px;
-    padding: 5px 20px;
-    text-decoration: none;
-  }
-  
-  #title {
-    display: flex;
-    background-image: url("images/title.jpg");
-    background-repeat: no-repeat;   
-    background-size: cover;
-    min-height: 475px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #inspiring {
-    font-family: Sacramento;
-    font-size: 80px;
-    font-weight: 100;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  #description {
-    text-decoration: none;
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    width: calc(25% - 30px);
-    margin: 10px;
-    background-color: #f2f2f2;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  img {
-    width: auto;
-    max-height: 200px;
-  }
-  
-  .container {
-    padding: 2px 16px;
-    background-color: cadetblue;
-    color: black;
-  }
+  font-family: roboto mono, Arial;
+  box-sizing: border-box;
+}
 
-  footer {
-    text-align: center;
-    font-size: small;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    
-  }
-  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#logo {
+  color: rgb(181, 205, 163);
+  flex-direction: flex-start;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+#search {
+  /* background-color: rgb(201, 228, 197); */
+  border-radius: 28px;
+  border: 1px solid rgb(181, 205, 163);
+  cursor: auto;
+  color: grey;
+  font-size: 14px;
+  padding: 2px 100px;
+  text-decoration: none;
+}
+
+#login {
+  flex-direction: flex-end;
+
+  background-color: rgb(201, 228, 197);
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: grey;
+  font-size: 14px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+#title {
+  display: flex;
+  background-image: url("images/title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 475px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+#inspiring {
+  font-family: Sacramento;
+  font-size: 80px;
+  font-weight: 100;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  flex: 0 0 10%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  overflow: auto;
+  border-radius: 10px;
+  width: 185px;
+  height: 238px;
+}
+
+.container {
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
