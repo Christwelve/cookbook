@@ -124,9 +124,10 @@ tr:nth-child(even) {
 }
 
 
-
 .flip-box {
   background-color: transparent;
+  width: 100%;
+  height: 238px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -135,9 +136,9 @@ tr:nth-child(even) {
 .flip-box-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 238px;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
@@ -149,21 +150,18 @@ tr:nth-child(even) {
 /* Position the front and back side */
 .flip-box-front, .flip-box-back {
   position: absolute;
+  margin-top: 0%;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
 /* Style the back side */
 .flip-box-back {
-  background-color: dodgerblue;
-  color: black;
+  width: 100%;
+  height: 238px;
+  background-color: rgb(181, 205, 163);
+  color: white;
   transform: rotateY(180deg);
 }
