@@ -1,7 +1,6 @@
 * {
   font-family: roboto mono, Arial;
   box-sizing: border-box;
-  font-size: 1rem;
 }
 
 .navbar {
@@ -66,13 +65,13 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.row {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.col {
+.card {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
@@ -80,7 +79,7 @@
   flex: 0 0 10%;
 }
 
-.col:hover {
+.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -91,94 +90,14 @@ img {
   height: 238px;
 }
 
-
 .container {
   padding: 10px;
   color: black;
   font-weight: bold;
-  font-size:1em;
+  font-size: 18px;
   text-align: center;
   border-radius: 10px;
-  display: grid;
 }
-
-
-.heart-btn{
-  width: 8em;
-  height: 2.5em;
-  position: relative;
-  font-size: 0.5em;
-}
-
-button span{
-  background: transparent;
-  outline: none;
-  border: none;
-  color: #f9e351;
-  font-size: 1.2em;
-}
-
-.heart-btn button::before, .heart-btn button::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background-color: grey;
-  z-index: 0;
-  transition: 0.4s;
-}
-
-.heart-btn button::before{
-  left: 0;
-  border-radius: 2em 0 0 2em;
-}
-
-.heart-btn button::after{
-  right: 0;
-  border-radius: 0 2em 2em 0;
-}
-
-.heart-btn span{
-  position: absolute;
-  z-index: 1;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-input[type="checkbox"]{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 2;
-}
-
-input[type="checkbox"]:checked + button::before{
-  transform: rotate(45deg) translate(1em , -1.05em);
-  animation: glow 0.6s ease-in 0.4s forwards;
-}
-
-input[type="checkbox"]:checked + button::after{
-  transform: rotate(-45deg) translate(-1em , -1.05em);
-  animation: glow 0.6s ease-in 0.4s forwards;
-}
-
-input[type="checkbox"]:checked + button span {
-  opacity: 0;
-}
-
-@keyframes glow{
-  100%{
-    background: #db291d;
-  }
-}
-
 
 footer {
   text-align: center;
@@ -197,11 +116,9 @@ td {
   text-align: left;
   padding: 4px;
   border: 1px solid #ddd;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
-
