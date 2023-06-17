@@ -19,6 +19,7 @@
   /* flex-direction: flex-start; */
   font-size: 26px;
   font-weight: 800;
+  cursor: pointer;
 }
 
 #search {
@@ -38,11 +39,17 @@
   background-color: rgb(201, 228, 197);
   border-radius: 28px;
   border: 1px solid #18ab29;
+  /* transition: box-shadow 0.3s ease; */
   cursor: pointer;
   color: grey;
   font-size: 14px;
   padding: 5px 20px;
   text-decoration: none;
+}
+
+#login:hover {
+	background-color: #18ab29;
+  	color: white;
 }
 
 #title {
