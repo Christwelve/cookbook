@@ -93,8 +93,8 @@
 img {
   overflow: auto;
   border-radius: 10px;
-  width: 185px;
-  height: 238px;
+  /* width: 185px; */
+  height: 238px; 
 }
 
 .container {
