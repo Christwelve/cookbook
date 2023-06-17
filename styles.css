@@ -5,18 +5,18 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  padding-left: 5%;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* top: 0; */
+  /* padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 2%; */
 }
 
 #logo {
   color: rgb(181, 205, 163);
-  flex-direction: flex-start;
+  /* flex-direction: flex-start; */
   font-size: 26px;
   font-weight: 800;
 }
@@ -59,6 +59,7 @@
 
 #inspiring {
   font-family: Sacramento;
+  text-align: center;
   font-size: 80px;
   font-weight: 100;
   color: white;
