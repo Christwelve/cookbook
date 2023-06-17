@@ -66,13 +66,13 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.row {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.col {
+.card {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
@@ -80,7 +80,7 @@
   flex: 0 0 10%;
 }
 
-.col:hover {
+.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
