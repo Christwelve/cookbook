@@ -164,7 +164,7 @@ tr:nth-child(even) {
   color: white;
   transform: rotateY(180deg);
 }
-
+/*
 .heart-btn{
   width: 8em;
   height: 2.5em;
@@ -239,4 +239,15 @@ input[type="checkbox"]:checked + button span {
   100%{
     background: #db291d;
   }
+}
+*/
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: #18ab29;
 }
